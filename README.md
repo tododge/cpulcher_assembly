@@ -2,7 +2,15 @@
 
 ![Suboptimal sampling strategy for high-quality genome assembly: A comparative view on the demise of an Extinct-in-the-Wild reptile](/scripts/figures/pulcher_github.png "figure 2")
 
-This workflow contains scripts used in [Ernst et al. (submitted)](https://www.placeholder).
+This workflow contains scripts used in:
+\
+\
+**Suboptimal sampling strategy for high-quality genome assembly: A comparative view on the demise of an Extinct-in-the-Wild reptile** [Preprint](https://www.placeholder)
+
+Authors: Mario Ernst†, Tristram O. Dodge†, Paul Oliver & Mozes P.K. Blom
+\
+†These authors contributed equally to this study
+
 
 ## Computation
 
