@@ -1,0 +1,43 @@
+#############
+# GATK HIFI #
+#############
+
+module load biology java gatk
+
+#java version 21.0.4
+#gatk version 4.6.0.0
+
+
+REF=crypul_v2024.1.fa
+
+gatk --java-options "-Xmx32G" HaplotypeCaller \
+    -I hifi_reads/${REF}.hifireads.sorted.q20.bam \
+    -R reference/${REF} \
+    -pcr-indel-model AGGRESSIVE \
+    -ERC GVCF \
+    -L $CHR \
+    -O gatk_output/${REF}.hifireads.sorted.q20.bam.$CHR.g.gvcf.gz
+
+gatk --java-options "-Xmx16G" GenotypeGVCFs \
+   -R reference/${REF} \
+   --all-sites \
+   -V gatk_output/${REF}.hifireads.sorted.q20.bam.$CHR.g.gvcf.gz \
+   -O gatk_output/${REF}.hifireads.sorted.q20.bam.$CHR.vcf.gz
+
+##############
+# GATK omniC #
+##############
+
+gatk --java-options "-Xmx32G" HaplotypeCaller \
+    -I omniC_reads/${REF}.omniCreads.sorted.q20.bam \
+    -R reference/${REF} \
+    -pcr-indel-model AGGRESSIVE \
+    -ERC GVCF \
+    -L $CHR \
+    -O gatk_output/${REF}.omniCreads.sorted.q20.bam.$CHR.g.gvcf.gz
+
+gatk --java-options "-Xmx16G" GenotypeGVCFs \
+   -R reference/${REF} \
+   --all-sites \
+   -V gatk_output/${REF}.omniCreads.sorted.q20.bam.$CHR.g.gvcf.gz \
+   -O gatk_output/${REF}.omniCreads.sorted.q20.bam.$CHR.vcf.gz
