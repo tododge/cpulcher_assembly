@@ -5,7 +5,7 @@
 This workflow contains scripts used in:
 \
 \
-**Suboptimal sampling strategy for high-quality genome assembly: A comparative view on the demise of an Extinct-in-the-Wild reptile** [Preprint](https://www.placeholder)
+**Suboptimal sampling strategy for high-quality genome assembly: A comparative view on the demise of an Extinct-in-the-Wild reptile**
 
 Authors: Mario Ernst†, Tristram O. Dodge†, Paul Oliver & Mozes P.K. Blom
 \
@@ -29,7 +29,7 @@ Assemble genome with hifiasm and duplicate purging with purge_dups.
 \
 ```sbatch scripts/assembly/sub_assembly_hifiasm-purgedups.sh```
 ### Scaffold purged assembly
-Scaffold purged C. pulcher contigs with RagTag.
+Scaffold purged C. pulcher contigs with Omni-C data.
 \
 \
 ```sbatch scripts/assembly/sub_assembly_scaffold-omniC.sh```
@@ -49,7 +49,7 @@ Build repeat database with repeatmodeller and mask repeats with repeatmasker.
 \
 ```sbatch scripts/assembly/sub_assembly_repeats.sh```
 ### Scaffold C. egeriae contigs
-Scaffold C. egeriae contigs with RagTag.
+Scaffold C. egeriae contigs to C. pulcher chroms with RagTag.
 \
 \
 ```sbatch scripts/assembly/sub_assembly_scaffold-egeriae.sh```
@@ -59,7 +59,7 @@ Align genomes with minimap2 and mummer4.
 \
 ```sbatch scripts/assembly/sub_assembly_align.sh```
 ### Map reads back to genome
-Map hifi reads with minimap2 and omni-C reads using arima genomics pipeline.
+Map hifi reads with minimap2, and map Omni-C reads using arima genomics pipeline.
 \
 \
 ```sbatch scripts/assembly/sub_assembly_map-reads.sh```
