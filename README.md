@@ -1,13 +1,15 @@
 # cpulcher_assembly
 
-![Suboptimal sampling strategy for high-quality genome assembly: A comparative view on the demise of an Extinct-in-the-Wild reptile](/scripts/figures/pulcher_github.png "figure 2")
+![A practical sampling strategy for biodiversity genomics of reptiles: The Cryptoblepharus pulcher assembly offers insights into the demise of a threatened relative](/scripts/figures/pulcher_github.png "figure 2")
+
+
 
 This workflow contains scripts used in:
 \
 \
-**Suboptimal sampling strategy for high-quality genome assembly: A comparative view on the demise of an Extinct-in-the-Wild reptile**
+**A practical sampling strategy for biodiversity genomics of reptiles: The Cryptoblepharus pulcher assembly offers insights into the demise of a threatened relative** [(BioRxiv Preprint)](https://www.biorxiv.org/content/10.64898/2026.08.27.747638v1)
 
-Authors: Mario Ernst†, Tristram O. Dodge†, Paul Oliver & Mozes P.K. Blom
+Authors: Tristram O. Dodge†, Mario Ernst†, Paul Oliver & Mozes P.K. Blom
 \
 †These authors contributed equally to this study
 
